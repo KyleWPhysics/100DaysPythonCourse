@@ -1,3 +1,5 @@
+#Calculating individual bills after including the tip
+
 print("Welcome to the Tip Calculator!")
 bill = int(input("What is the total of the bill? $"))
 people = int(input("How many people ate? "))
