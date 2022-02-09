@@ -1,0 +1,29 @@
+#Based off a Buzzfeed quiz, calculate compatibility by searching names for matching letters. 
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+total_string = name1 + name2
+lower_string = total_string.lower()
+
+t = lower_string.count("t")
+r = lower_string.count("r")
+u = lower_string.count("u")
+e = lower_string.count("e")
+true = t + r + u + e
+l = lower_string.count("l")
+o = lower_string.count("o")
+v = lower_string.count("v")
+e = lower_string.count("e")
+love =  l + o + v + e
+
+calc = str(true) + str(love)
+calc = int(calc)
+
+if calc < 10 or calc > 90:
+    print(f"Your score is {calc}, you go together like coke and mentos.")
+elif calc >= 40 and calc <=50:
+    print(f"Your score is {calc}, you are alright together.")
+else:
+    print(f"Your score is {calc}.")
